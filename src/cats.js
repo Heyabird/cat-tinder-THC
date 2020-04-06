@@ -9,7 +9,7 @@ const cats = [
     id: 2,
     name: 'Paws',
     age: 4,
-    enjoys: "Snuggling by the fire and really likes Catnip."
+    enjoys: "Snuggling by the fire and Catnip."
   },
   
 ]

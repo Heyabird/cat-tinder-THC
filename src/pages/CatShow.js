@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {ListGroup, Button} from 'reactstrap';
 import {Link, Route, Switch, BrowserRouter as Router} from "react-router-dom"
 import CrazyCat from "./crazyCat.png"
+import Home from './back_home.png'
 
 
 
@@ -18,25 +19,40 @@ class CatShow extends Component {
         {/* cat will eventually get assigned to an object - become truthy */}
         {cat &&
         <div>
-            <Link to="/" id="button"><Button>Back Home</Button></Link>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <div id="middle">
-                <ListGroup>
-                    <br/>
-                    <br/>
-                    <img id="zoom" src={CrazyCat}/>
-                    <br/>
+                <img id="zoom" src={CrazyCat}/>
+                
                 <div id= "box"> 
                     <h4>{cat.name}</h4>
-                    <small>Age: {cat.age}</small>
-                    <small>Hobby: {cat.hobby}</small>
+                    <small><strong>Age: </strong>{cat.age}</small>
+                    <br/>
+                    <small><strong>Hobby: </strong>{cat.hobby}</small>
                 </div>
-                </ListGroup>
+                <br/>
+                
                 <br/>
                 <br/>
-                <Button>Edit</Button> &nbsp;
-                <Button>Delete</Button>
             </div>
+            <div id="editanddelete">
+                <br/>
+                <br/>
+                <Button>Edit</Button> &nbsp; &nbsp; 
+                <Button>Delete</Button>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <Link to="/" id="homebutton"><img class="icon" src={Home}/></Link>
         </div>
+        
+
         }
         </>
     )

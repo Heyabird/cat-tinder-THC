@@ -3,6 +3,8 @@ import { Form, FormGroup, Label, Input, Button }
 from 'reactstrap';
 import cats from "../cats"
 import {Link, Route, Redirect, BrowserRouter as Router} from "react-router-dom"
+import Home from './back_home.png'
+
 
 class CatCreate extends Component {
     constructor(props) {
@@ -35,7 +37,6 @@ class CatCreate extends Component {
     render() {
     return (
     <>
-      <a href ="/" id="button"><Button>Back Home</Button></a>
       <br/>
       <br/>
       <Form>
@@ -64,10 +65,15 @@ class CatCreate extends Component {
             value={ this.state.form.hobby }
           />
         </FormGroup>
+        <br/>
         <Link to="/">
         <Button type="submit" id="submit" name="submit" onClick={ this.handleSubmit }>Add New Cat</Button>
         {this.state.success && <Redirect to="./"/>}
         </Link>
+        <br/>
+            <br/>
+            <br/>
+            <Link to="/" id="homebutton"><img class="icon" src={Home}/></Link>
       </Form>
 
     </>

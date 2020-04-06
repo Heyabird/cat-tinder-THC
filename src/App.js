@@ -54,8 +54,6 @@ class App extends Component{
     return(
       <>
       <br/>
-      <br/>
-
         <Header />
         <Router>
           <Switch>

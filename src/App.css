@@ -1,3 +1,7 @@
+h4, small {
+    font-family: 'Roboto Mono';
+}
+
 h1 {
     text-align: center;
     margin: auto;
@@ -5,46 +9,87 @@ h1 {
 
 #box {
     width: 200px;
-    height: 300px;
-    /* border: 1px black solid; */
     display: inline-block;
-    margin: auto;
-    align-items: center;
+    text-align: left;
+    padding-top: 10px;
+    margin: 30px;
+}
 
+#box1 {
+    width: 200px;
+    display: flex;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#description {
+    width: 190px;
     
+}
+
+.icon {
+    /* display: flex;
+    flex-direction: row; */
+    color: rgb(255, 81, 0);
+    width: 70px;
+    height: 70px;
+    margin: auto;
+
 }
 
 #button {
     /* border: 1px black solid; */
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 3.5em;
+    /* display: flex; */
+    /* flex-direction: row;
+    justify-content: flex-end; */
+    margin: auto;
     color: rgb(255, 81, 0);
 
 }
 
 
+#homebutton {
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* margin-left: 3.5em; */
+    color: rgb(255, 81, 0);
+
+}
+
+.cats {
+    margin: 40px;
+    height: 350px;
+
+}
+
+
+
 img {
     width: 200px;
-    height: 200px;
     display: flex;
     align-self: center;
 }
 
 #zoom {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-self: center;
+    width: 200px;
+    height: 160px;
+    display: inline-block;
 }
 
 #middle {
     text-align: center;
     margin: auto;
+    display: flex;
+    align-items: baseline;
+    margin: 10px;
+    justify-content: center;
     /* display: flex;
     align-content: center; */
 }
+
 
 #center {
     display: flex;
@@ -52,7 +97,8 @@ img {
     margin: 50px;
 }
 #form{
-    margin: 100px;
+    margin: 30px 200px 30px 200px;
+
 }
 #submit{
     display: flex;
@@ -79,4 +125,11 @@ h4 {
     margin: auto;
     width: auto;
     height: 25px;
+}
+
+#editanddelete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
